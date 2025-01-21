@@ -85,10 +85,10 @@ export default defineUserConfig({
     ],
 
     // 目录配置
-    dest: '.vuepress/dist',    // 输出目录
-    temp: '.vuepress/.temp',   // 临时文件目录
-    cache: '.vuepress/.cache', // 缓存目录
-    public: '.vuepress/public',// 静态资源目录
+    dest: 'docs/.vuepress/dist',    // 输出目录
+    temp: 'docs/.vuepress/.temp',   // 临时文件目录
+    cache: 'docs/.vuepress/.cache', // 缓存目录
+    public: 'docs/.vuepress/public',// 静态资源目录
 
     // 调试模式
     debug: false,
