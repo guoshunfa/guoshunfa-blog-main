@@ -8,6 +8,7 @@ import { baiduAnalyticsPlugin } from '@vuepress/plugin-baidu-analytics'
 import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 import { tocPlugin } from '@vuepress/plugin-toc'
 import { cachePlugin } from '@vuepress/plugin-cache'
+import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
 
 export const plugins = [
     copyrightPlugin({
@@ -44,12 +45,14 @@ export const plugins = [
             // },
         ],
     }),
+    // 图片预览 
     photoSwipePlugin({
-        selector: '.theme-default-content :not(a) > img',
-        download: true,
-        fullscreen: true,
-        scrollToClose: true,
     }),
+    // 图片放大
+    mediumZoomPlugin({
+        selector: '',
+    }),
+    // 水印
     watermarkPlugin({
         enabled: false,
     }),

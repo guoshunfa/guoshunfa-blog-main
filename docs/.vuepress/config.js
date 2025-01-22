@@ -3,7 +3,7 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { navbar } from './config/navbar.js'
 import { plugins } from './config/plugins.js'
-import { sidebar } from './config/sidebar.js'
+import { sidebar } from './config/sidebar/index.js'
 
 // https://vuepress.vuejs.org/zh/reference/config.html
 // 默认主题：https://ecosystem.vuejs.press/zh/themes/default/config.html
@@ -57,12 +57,6 @@ export default defineUserConfig({
         colorMode: 'auto',
         colorModeSwitch: true,
 
-        // 多语言配置
-        locales: {
-            '/': {
-                selectLanguageName: '简体中文',
-            },
-        },
     }),
 
     // 站点基础路径，默认为 "/"
@@ -72,7 +66,7 @@ export default defineUserConfig({
     lang: 'zh-CN',
 
     // 站点标题
-    title: '郭顺发的站点',
+    title: '郭顺发',
 
     // 站点描述
     description: '',
