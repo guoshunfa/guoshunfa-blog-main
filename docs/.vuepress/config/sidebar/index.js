@@ -9,7 +9,7 @@ import { homeSidebar } from './home'
 export const sidebar = {
     '/': homeSidebar,
     '/作者/': authorSidebar,
-    '/古中医&道医/': medicineSidebar,
+    '/中医自学/': medicineSidebar,
     '/过往经历/': experienceSidebar,
     '/编程分享/': programmingSidebar,
     '/实用工具/': toolsSidebar,
