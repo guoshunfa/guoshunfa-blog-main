@@ -1,4 +1,5 @@
 import { defineClientConfig } from '@vuepress/client'
+import CustomLayout from './layouts/Layout.vue'
 
 // 侧边栏数据配置
 const sidebarItems = [
@@ -33,6 +34,9 @@ const sidebarItems = [
 添加了检查避免重复添加
  */
 export default defineClientConfig({
+  layouts: {
+    Layout: CustomLayout,
+  },
   enhance({ app, router, siteData }) {
     // 确保代码只在客户端执行
     if (typeof window !== 'undefined') {

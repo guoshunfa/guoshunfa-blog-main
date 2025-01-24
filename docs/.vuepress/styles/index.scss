@@ -1,0 +1,14 @@
+.right-toc {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    width: 200px;
+    background: #fff;
+    padding: 1rem;
+    border-left: 1px solid #eaecef;
+    
+    .toc-list {
+      list-style: none;
+      padding-left: 1rem;
+    }
+}

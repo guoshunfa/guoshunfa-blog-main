@@ -9,6 +9,8 @@ import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 import { tocPlugin } from '@vuepress/plugin-toc'
 import { cachePlugin } from '@vuepress/plugin-cache'
 import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
+import { seoPlugin } from '@vuepress/plugin-seo'
+import { sitemapPlugin } from '@vuepress/plugin-sitemap'
 
 export const plugins = [
     copyrightPlugin({
@@ -73,6 +75,17 @@ export const plugins = [
     }),
     tocPlugin({
         componentName: 'Toc',
+        defaultPropsOptions: {
+            containerTag: 'div',
+            containerClass: 'right-toc',
+            listClass: 'toc-list'
+        }
+    }),
+    seoPlugin({
+    }),
+    sitemapPlugin({
+        hostname: 'https://www.guoshunfa.com',
+        
     }),
     cachePlugin({
         type: 'memory',
