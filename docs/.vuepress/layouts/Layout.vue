@@ -1,28 +1,24 @@
 <template>
-  <Layout>
-    <template #page>
-      <main class="page">
-        <div class="theme-default-content">
-          <Content />
-        </div>
-        <ClientOnly>
-          <div class="toc-wrapper">
-            <Toc />
-          </div>
-        </ClientOnly>
-      </main>
+  <ParentLayout>
+    <template #page-bottom>
+      <div class="custom-footer">
+        <p>2025 <a href="https://www.guoshunfa.com" target="_blank">郭顺发</a> | 保留所有权利</p>
+          <p>
+          <a href="https://www.beian.miit.gov.cn/" target="_blank">ICP备案号：黑ICP备2025034955号-1</a>
+        </p>
+      </div>
     </template>
-  </Layout>
+  </ParentLayout>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
-import Layout from '@vuepress/theme-default/layouts/Layout.vue'
+import ParentLayout from '@vuepress/theme-default/layouts/Layout.vue'
 
 export default defineComponent({
   name: 'CustomLayout',
   components: {
-    Layout
+    ParentLayout
   }
 })
 </script>
@@ -90,5 +86,20 @@ h1.title {
   margin-top: -0.5rem !important;
   padding-top: 0 !important;
   margin-bottom: 2rem;
+}
+
+.custom-footer {
+  padding: 2.5rem;
+  border-top: 1px solid var(--c-border);
+  text-align: center;
+  color: var(--c-text-lighter);
+  background-color: #f8f9fa;
+  
+  a {
+    color: var(--c-text-lighter);
+    &:hover {
+      color: var(--c-brand);
+    }
+  }
 }
 </style>

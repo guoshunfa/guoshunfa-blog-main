@@ -1,1 +1,6 @@
-export const toolsSidebar = []
+export const toolsSidebar = [
+    {
+        text: '工具',
+        link: '/',
+    }
+]

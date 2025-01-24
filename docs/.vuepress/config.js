@@ -41,7 +41,7 @@ export default defineUserConfig({
         sidebar,
 
         // 侧边栏深度，默认为2（显示 h2 和 h3 标题）
-        sidebarDepth: 0,
+        sidebarDepth: 2,
 
         // 编辑链接配置
         editLink: true,

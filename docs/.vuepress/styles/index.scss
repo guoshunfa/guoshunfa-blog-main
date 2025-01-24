@@ -12,3 +12,16 @@
       padding-left: 1rem;
     }
 }
+
+// 全局图片样式
+.theme-default-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+// 如果需要保持小图片原始大小,可以添加一个特殊类
+.theme-default-content img.keep-size {
+  max-width: none;
+}

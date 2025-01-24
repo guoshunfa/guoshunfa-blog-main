@@ -16,7 +16,7 @@ export const plugins = [
     copyrightPlugin({
         author: '郭顺发',
         license: 'MIT',
-        copyright: 'Copyright © 2024 guoshunfa',
+        copyright: 'Copyright © 2025 guoshunfa',
         authorGetter: (page) => null,
         licenseGetter: (page) => null,
         copyrightGetter: (page) => null,
@@ -49,10 +49,24 @@ export const plugins = [
     }),
     // 图片预览 
     photoSwipePlugin({
+        selector: '.theme-default-content img',
+        download: true,
+        fullscreen: true, 
+        scrollToClose: true,
+        locales: {
+            '/': {
+                close: '关闭',
+                fullscreen: '全屏',
+                share: '分享',
+                zoom: '缩放',
+                prev: '上一张',
+                next: '下一张',
+            }
+        }
     }),
     // 图片放大
     mediumZoomPlugin({
-        selector: '',
+        selector: 'no-zoom',
     }),
     // 水印
     watermarkPlugin({

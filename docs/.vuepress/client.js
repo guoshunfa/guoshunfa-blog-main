@@ -1,5 +1,5 @@
 import { defineClientConfig } from '@vuepress/client'
-import CustomLayout from './layouts/Layout.vue'
+import Layout from './layouts/Layout.vue'
 
 // 侧边栏数据配置
 const sidebarItems = [
@@ -7,7 +7,7 @@ const sidebarItems = [
         icon: '/images/shouji.png',
         label: '手机版',
         popupTitle: '<span style="font-weight: bold; color: #1e1e1e; font-size: 16px;">扫码体验手机版</span>',
-        popupText: '随时随地学编程',
+        popupText: '随时随地看',
         isDynamicQR: true  // 标记这个项目需要动态二维码
     },
     {
@@ -35,7 +35,7 @@ const sidebarItems = [
  */
 export default defineClientConfig({
   layouts: {
-    Layout: CustomLayout,
+    Layout,
   },
   enhance({ app, router, siteData }) {
     // 确保代码只在客户端执行
