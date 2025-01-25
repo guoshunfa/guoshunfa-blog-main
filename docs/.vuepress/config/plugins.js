@@ -11,7 +11,7 @@ import { cachePlugin } from '@vuepress/plugin-cache'
 import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
 import { seoPlugin } from '@vuepress/plugin-seo'
 import { sitemapPlugin } from '@vuepress/plugin-sitemap'
-
+import { rightAnchorPlugin } from 'vuepress-plugin-right-anchor'
 export const plugins = [
     copyrightPlugin({
         author: '郭顺发',
@@ -30,6 +30,19 @@ export const plugins = [
     iconPlugin({
         // 选项
     }),
+    // 右侧目录
+    // https://github.com/xuek9900/vuepress-plugin-right-anchor/blob/master/zh-README.md
+    // rightAnchorPlugin({
+    //     showDepth: 2,
+    //     ignore: [
+    //       // 更多...
+    //     ],
+    //     expand: {
+    //       trigger: 'click',
+    //       clickModeDefaultOpen: true
+    //     },
+    //     customClass: null,
+    // }),
     noticePlugin({
         config: [
             // {

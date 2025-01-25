@@ -6,22 +6,45 @@
     background: #fff;
     padding: 1rem;
     border-left: 1px solid #eaecef;
-    
+
     .toc-list {
-      list-style: none;
-      padding-left: 1rem;
+        list-style: none;
+        padding-left: 1rem;
     }
 }
 
 // 全局图片样式
 .theme-default-content img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
 }
 
 // 如果需要保持小图片原始大小,可以添加一个特殊类
 .theme-default-content img.keep-size {
-  max-width: none;
+    max-width: none;
+}
+
+.right-anchor {
+    --rightAnchorTextColor: var(--c-text);
+    --rightAnchorFontSize: 14px;
+    /* Btn */
+    --rightAnchorBtnTextColor: var(--rightAnchorTextColor);
+    --rightAnchorBtnBgColor: var(--c-bg);
+    /* Menu */
+    --rightAnchorMenuTextColor: var(--rightAnchorTextColor);
+    --rightAnchorMenuBgColor: var(--c-bg);
+}
+
+/* dark theme */
+.dark .right-anchor {
+    --rightAnchorTextColor: var(--c-text);
+    --rightAnchorFontSize: 14px;
+    /* Btn */
+    --rightAnchorBtnTextColor: var(--rightAnchorTextColor);
+    --rightAnchorBtnBgColor: var(--c-bg);
+    /* Menu */
+    --rightAnchorMenuTextColor: var(--rightAnchorTextColor);
+    --rightAnchorMenuBgColor: var(--c-bg);
 }

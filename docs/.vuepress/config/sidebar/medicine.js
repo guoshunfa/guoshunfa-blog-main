@@ -4,6 +4,22 @@ export const medicineSidebar = [
         link: '中医自学简要.md'
     },
     {
+        text: '13点拆解',
+        link: '13点拆解.md'
+    },
+    {
+        text: '采购',
+        link: '采购.md'
+    },
+    {
+        text: '得病自治',
+        link: '得病自治.md'
+    },
+    {
+        text: '中医理论和逻辑',
+        link: '中医理论和逻辑.md'
+    },
+    {
         text: '中医方子',
         link: '中医方子.md',
         collapsible: true,
@@ -151,23 +167,7 @@ export const medicineSidebar = [
             {
                 text: '萝卜方',
                 link: '中医方子备份/萝卜方.md'
-            }
+            },
         ]
     },
-    {
-        text: '13点拆解',
-        link: '13点拆解.md'
-    },
-    {
-        text: '中医理论和逻辑',
-        link: '中医理论和逻辑.md'
-    },
-    {
-        text: '采购',
-        link: '采购.md'
-    },
-    {
-        text: '得病自治',
-        link: '得病自治.md'
-    }
 ]

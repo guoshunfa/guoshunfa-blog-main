@@ -4,8 +4,6 @@ import { defineUserConfig } from 'vuepress'
 import { navbar } from './config/navbar.js'
 import { plugins } from './config/plugins.js'
 import { sidebar } from './config/sidebar/index.js'
-import path from 'path'
-import { path as vuepressPath } from '@vuepress/utils'
 
 // https://vuepress.vuejs.org/zh/reference/config.html
 // 默认主题：https://ecosystem.vuejs.press/zh/themes/default/config.html
@@ -41,7 +39,7 @@ export default defineUserConfig({
         sidebar,
 
         // 侧边栏深度，默认为2（显示 h2 和 h3 标题）
-        sidebarDepth: 2,
+        sidebarDepth: 0,
 
         // 编辑链接配置
         editLink: true,
@@ -67,10 +65,10 @@ export default defineUserConfig({
     lang: 'zh-CN',
 
     // 站点标题
-    title: '郭顺发的站点',
+    title: '郭顺发的个人记录',
 
     // 站点描述
-    description: '站点信息正在搭建......',
+    description: '',
 
     // 站点头部配置
     head: [

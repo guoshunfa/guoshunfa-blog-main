@@ -26,6 +26,10 @@
     "@vuepress/plugin-watermark": "^2.0.0-rc.73",
     "@vuepress/theme-default": "^2.0.0-rc.73",
     "sass-embedded": "^1.83.4",
+    "vuepress-plugin-right-anchor": "^2.1.0-rc.2",
     "vuepress-plugin-toolbar": "^1.0.1"
+  },
+  "dependencies": {
+    "ts-debounce": "^4.0.0"
   }
 }
